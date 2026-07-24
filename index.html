@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腕表行情 Watch Price Trends Uhren-Preistrends</title>
+<meta name="description" content="查询劳力士、欧米茄、爱彼、百达翡丽等热门二手表款的价格走势 — 中文/English/Deutsch 三语。Look up secondary-market price trends for popular Rolex, Omega, AP and Patek Philippe references. Preistrends für gefragte Rolex-, Omega-, AP- und Patek-Philippe-Referenzen.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://junpingkoch-web.github.io/watch-price-tracker/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%8C%9A%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<!-- Google AdSense: replace data-ad-client below with your real ca-pub-XXXX ID once your site is approved. -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1 class="app-title">
+        <span class="title-icon" aria-hidden="true">⌚</span>
+        <span class="title-text" data-i18n="appTitle">腕表行情</span>
+        <span class="title-icon" aria-hidden="true">📈</span>
+      </h1>
+      <div class="header-actions">
+        <button id="helpToggle" class="icon-btn help-btn-3d" type="button" aria-label="Tips" aria-haspopup="dialog">?</button>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="zh" type="button">中文</button>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="de" type="button">DE</button>
+        </div>
+      </div>
+    </header>
+
+    <div id="sampleBanner" class="sample-banner" hidden>
+      <p>⚠️ <span lang="zh">当前为占位示例数据，非真实市场行情。</span> <span lang="en">Placeholder example data — not real market prices.</span> <span lang="de">Platzhalter-Beispieldaten, keine echten Marktpreise.</span></p>
+    </div>
+
+    <!-- Ad slot: top banner. Replace with a real AdSense <ins> unit once approved, e.g.:
+         <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
+              data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+    <div class="ad-slot">
+      <div class="ad-box" data-i18n="adLabel">广告</div>
+    </div>
+
+    <!-- LIST VIEW -->
+    <section id="viewList" class="view active">
+      <div class="card toolbar-card">
+        <div class="field">
+          <label for="searchInput" data-i18n="searchLabel">搜索品牌 / 型号 / 参考号</label>
+          <input type="text" id="searchInput" data-i18n-placeholder="searchPlaceholder" placeholder="例如 Submariner、劳力士、126610…">
+        </div>
+        <div class="chip-row" id="brandChips" aria-label="Brand filter"></div>
+        <div class="chip-row" id="categoryChips" aria-label="Category filter"></div>
+      </div>
+
+      <p class="updated-note"><span data-i18n="updatedLabel">数据更新于</span> <span id="updatedDate"></span></p>
+
+      <div id="watchGrid" class="watch-grid"></div>
+      <p class="empty-state" id="listEmptyState" data-i18n="noResults" hidden>没有找到匹配的表款。</p>
+    </section>
+
+    <!-- DETAIL VIEW -->
+    <section id="viewDetail" class="view">
+      <button id="backBtn" class="btn btn-secondary back-btn" type="button">
+        <span aria-hidden="true">←</span> <span data-i18n="backBtn">返回列表</span>
+      </button>
+
+      <div class="card detail-card">
+        <div class="detail-head">
+          <div>
+            <p class="detail-brand" id="detailBrand"></p>
+            <h2 class="detail-model" id="detailModel"></h2>
+            <p class="detail-ref" id="detailRef"></p>
+          </div>
+          <div class="detail-price">
+            <span class="price-value" id="detailPrice"></span>
+            <span class="price-delta" id="detailDelta"></span>
+          </div>
+        </div>
+
+        <div class="chart-wrap">
+          <svg id="detailChart" class="chart-svg" viewBox="0 0 640 260" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="detailModel"></svg>
+        </div>
+
+        <p class="detail-note" id="detailNote"></p>
+
+        <table class="history-table">
+          <thead>
+            <tr>
+              <th data-i18n="dateCol">日期</th>
+              <th data-i18n="priceCol">价格</th>
+            </tr>
+          </thead>
+          <tbody id="historyTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Ad slot: in-content rectangle. Replace with a real AdSense <ins> unit once approved. -->
+    <div class="ad-slot in-content">
+      <div class="ad-box" data-i18n="adLabel">广告</div>
+    </div>
+
+    <footer class="disclaimer">
+      <p data-i18n="disclaimer">数据为作者根据一线奢侈表零售从业经验整理，仅供参考，非实时报价，实际成交价格以市场为准。</p>
+    </footer>
+  </div>
+
+  <!-- Support button: replace the href with your own Buy Me a Coffee / Ko-fi page if different. -->
+  <a
+    class="support-fab"
+    href="https://www.buymeacoffee.com/junping.koch"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-i18n-title="coffeeTooltip"
+    title="喜欢这个工具？请我喝杯咖啡"
+  >
+    <span aria-hidden="true">☕</span>
+    <span data-i18n="coffeeBtn">请我喝杯咖啡</span>
+  </a>
+
+  <div id="helpModal" class="modal-overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <div class="modal-head">
+        <h2 id="helpTitle" data-i18n="helpTitle">使用说明</h2>
+        <button id="helpClose" class="icon-btn" type="button" aria-label="Close">&times;</button>
+      </div>
+      <ul class="tips-list">
+        <li data-i18n="helpTip1">搜索或点击品牌 / 类别标签筛选表款。</li>
+        <li data-i18n="helpTip2">点击任意卡片查看完整价格走势图与历史数据表。</li>
+        <li data-i18n="helpTip3">右上角可随时切换 中文 / EN / DE。</li>
+        <li data-i18n="helpTip4">所有数据均为人工整理，非实时市场报价，仅供参考。</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
