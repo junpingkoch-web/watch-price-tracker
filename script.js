@@ -27,7 +27,20 @@
       categorySport: "运动款",
       categoryDress: "正装款",
       periodChange: "区间涨跌",
-      latestPrice: "最新价格"
+      latestPrice: "最新价格",
+      explainTitle: "这些价格数据是怎么来的？",
+      explainP1: "本工具里的每一条价格记录，都是我基于自己在瑞士高端腕表零售一线的工作经验，结合日常观察到的二级市场行情，手工整理和更新的——不接入任何拍卖行、二手表交易平台或经销商的实时API，也不做自动抓取。",
+      explainP2: "页面上方「数据更新于」标注的是最近一次人工核对和更新价格的时间，不代表实时行情——腕表二级市场价格本身波动就比股票、加密货币更慢，按周或按月观察趋势通常更有参考意义，而不是追踪逐秒波动。",
+      explainP3: "同一型号在不同渠道看到的价格出现差异很正常：受地区、成色、原盒原证是否齐全、经销商加价策略，以及查询的具体时间点影响，实际成交价可能高于或低于本工具展示的参考区间。把这里的数字当作「大致方向」和「谈判起点」，而不是精确报价。",
+      faqTitle: "常见问题",
+      faq: [
+        { q: "这些价格数据是从实时市场API或拍卖行抓取的吗？", a: "不是。所有数据都是我根据自己在瑞士高端腕表零售的一线工作经验和日常市场观察手工整理的，不接入任何自动抓取或第三方实时API。" },
+        { q: "数据多久更新一次？", a: "没有固定周期，我会不定期根据市场变化人工核对和更新。每个页面顶部的「数据更新于」标注的就是最近一次更新时间。" },
+        { q: "为什么我在别的平台看到的价格和这里不一样？", a: "很正常。价格会受地区、成色、原盒原证是否齐全、具体经销商的加价策略以及查询时间点影响，本工具展示的是一个粗略的参考区间，不是某个具体渠道当下的实时报价。" },
+        { q: "这里显示的是官方零售价还是二手市场价？", a: "是二级/二手市场的参考价格趋势，用于观察热门型号的溢价或折价走势，不代表品牌官方零售价。" },
+        { q: "我可以拿这个价格去跟经销商砍价吗？", a: "可以作为谈判前的心理参考，帮你判断大致的市场区间，但不建议直接当作报价单——具体成交价最终取决于你联系的那家经销商或卖家。" },
+        { q: "这个工具会保存我的搜索记录或个人信息吗？", a: "不会。所有搜索和筛选都在你的浏览器本地完成，只有语言偏好会保存在本地，不会发送到任何服务器，也不需要注册。" }
+      ]
     },
     en: {
       appTitle: "Watch Price Trends",
@@ -51,7 +64,20 @@
       categorySport: "Sport",
       categoryDress: "Dress",
       periodChange: "Change over period",
-      latestPrice: "Latest price"
+      latestPrice: "Latest price",
+      explainTitle: "Where does this price data actually come from?",
+      explainP1: "Every price entry in this tool is compiled and updated by hand, based on first-hand experience working in Swiss luxury watch retail plus ongoing observation of the secondary market — there's no connection to any auction house, resale platform, or dealer API, and nothing is scraped automatically.",
+      explainP2: "The \"data updated\" date at the top of the page marks the last time the figures were manually reviewed and refreshed — it isn't a live feed. Secondary-market watch prices move far more slowly than stocks or crypto, so tracking weekly or monthly trends is more meaningful than chasing second-by-second moves.",
+      explainP3: "It's completely normal to see different prices for the same reference elsewhere: region, condition, whether box and papers are complete, individual dealer markup, and the exact timing you check all play a role, so the real transaction price can land above or below the range shown here. Treat these figures as a rough direction and a negotiation starting point, not a precise quote.",
+      faqTitle: "Frequently Asked Questions",
+      faq: [
+        { q: "Is this data pulled from a live market API or auction feed?", a: "No. Every figure is compiled by hand from first-hand experience in Swiss luxury watch retail and ongoing market observation — there's no automated scraping or third-party live API involved." },
+        { q: "How often is the data updated?", a: "There's no fixed schedule — figures are reviewed and updated manually as the market shifts. The \"data updated\" date at the top of each page tells you exactly how current the numbers are." },
+        { q: "Why do prices I see elsewhere differ from what's shown here?", a: "That's expected. Region, condition, whether box and papers are complete, individual dealer markup, and the exact timing all affect price — this tool shows a rough reference range, not a live quote from any specific channel." },
+        { q: "Is this the official retail price or the secondhand market price?", a: "It's a secondary/resale-market reference, meant to show whether a popular reference is trading at a premium or discount — not the brand's official retail price." },
+        { q: "Can I use this price to negotiate with a dealer?", a: "You can use it as a rough mental benchmark going into a conversation, but not as an actual quote — the real transaction price ultimately depends on the specific dealer or seller you talk to." },
+        { q: "Does this tool save my search history or personal info?", a: "No. All searching and filtering happens entirely in your browser; only your language preference is saved locally. No sign-up is required." }
+      ]
     },
     de: {
       appTitle: "Uhren-Preistrends",
@@ -75,7 +101,20 @@
       categorySport: "Sport",
       categoryDress: "Dress",
       periodChange: "Veränderung im Zeitraum",
-      latestPrice: "Aktueller Preis"
+      latestPrice: "Aktueller Preis",
+      explainTitle: "Woher stammen diese Preisdaten eigentlich?",
+      explainP1: "Jeder Preiseintrag in diesem Tool wird von Hand zusammengestellt und aktualisiert, basierend auf eigener Erfahrung im Schweizer Luxusuhren-Einzelhandel sowie laufender Beobachtung des Zweitmarkts — es gibt keine Anbindung an Auktionshäuser, Wiederverkaufsplattformen oder Händler-APIs, und nichts wird automatisiert abgegriffen.",
+      explainP2: "Das Datum „Daten aktualisiert am\" oben auf der Seite zeigt, wann die Zahlen zuletzt manuell überprüft und aktualisiert wurden — kein Live-Feed. Preise auf dem Zweitmarkt für Uhren bewegen sich ohnehin viel langsamer als Aktien oder Kryptowährungen, daher ist die Beobachtung wöchentlicher oder monatlicher Trends sinnvoller als das Verfolgen von Sekundenbewegungen.",
+      explainP3: "Es ist völlig normal, für dieselbe Referenz anderswo andere Preise zu sehen: Region, Zustand, Vollständigkeit von Box & Papieren, individuelle Aufschläge einzelner Händler und der genaue Abfragezeitpunkt spielen alle eine Rolle — der tatsächliche Transaktionspreis kann daher über oder unter der hier gezeigten Spanne liegen. Verstehe diese Zahlen als grobe Richtung und Verhandlungsausgangspunkt, nicht als präzises Angebot.",
+      faqTitle: "Häufig gestellte Fragen",
+      faq: [
+        { q: "Stammen diese Daten aus einer Live-Markt-API oder einem Auktions-Feed?", a: "Nein. Jede Zahl wird von Hand aus eigener Erfahrung im Schweizer Luxusuhren-Einzelhandel und laufender Marktbeobachtung zusammengestellt — kein automatisiertes Scraping, keine Live-API von Drittanbietern." },
+        { q: "Wie oft werden die Daten aktualisiert?", a: "Es gibt keinen festen Rhythmus — die Zahlen werden manuell geprüft und aktualisiert, wenn sich der Markt verändert. Das Datum „Daten aktualisiert am\" oben auf jeder Seite zeigt genau, wie aktuell die Werte sind." },
+        { q: "Warum weichen Preise, die ich anderswo sehe, von denen hier ab?", a: "Das ist normal. Region, Zustand, Vollständigkeit von Box & Papieren, individuelle Händleraufschläge und der genaue Zeitpunkt beeinflussen alle den Preis — dieses Tool zeigt eine grobe Referenzspanne, kein Live-Angebot eines bestimmten Anbieters." },
+        { q: "Ist das der offizielle Ladenpreis oder der Preis auf dem Gebrauchtmarkt?", a: "Es handelt sich um eine Referenz für den Zweitmarkt, die zeigt, ob eine gefragte Referenz mit Auf- oder Abschlag gehandelt wird — nicht um den offiziellen Ladenpreis der Marke." },
+        { q: "Kann ich diesen Preis nutzen, um mit einem Händler zu verhandeln?", a: "Du kannst ihn als groben gedanklichen Richtwert vor einem Gespräch nutzen, aber nicht als tatsächliches Angebot — der reale Transaktionspreis hängt letztlich vom jeweiligen Händler oder Verkäufer ab." },
+        { q: "Speichert dieses Tool meinen Suchverlauf oder persönliche Daten?", a: "Nein. Die gesamte Suche und Filterung läuft vollständig im Browser ab; nur die Sprachpräferenz wird lokal gespeichert. Eine Anmeldung ist nicht nötig." }
+      ]
     }
   };
 
@@ -126,11 +165,31 @@
   const backBtn = document.getElementById("backBtn");
 
   // ---------- Language ----------
+  const faqListEl = document.getElementById("faqList");
+  function renderFAQ() {
+    if (!faqListEl) return;
+    const faq = (i18n[currentLang] && i18n[currentLang].faq) || [];
+    faqListEl.innerHTML = "";
+    faq.forEach((item) => {
+      const details = document.createElement("details");
+      details.className = "faq-item";
+      const summary = document.createElement("summary");
+      summary.innerHTML = '<span class="chev">▶</span> <span>' + item.q + "</span>";
+      const body = document.createElement("div");
+      body.className = "faq-a";
+      body.textContent = item.a;
+      details.appendChild(summary);
+      details.appendChild(body);
+      faqListEl.appendChild(details);
+    });
+  }
+
   function applyLanguage() {
     document.documentElement.lang = currentLang;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       el.textContent = t(el.getAttribute("data-i18n"));
     });
+    renderFAQ();
     document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
       el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder")));
     });

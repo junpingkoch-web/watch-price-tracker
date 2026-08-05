@@ -9,6 +9,45 @@
 <link rel="canonical" href="https://junpingkoch-web.github.io/watch-price-tracker/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%8C%9A%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+<!-- Structured data: FAQPage (English defaults; keep in sync with the "en" faq array in script.js) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this data pulled from a live market API or auction feed?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Every figure is compiled by hand from first-hand experience in Swiss luxury watch retail and ongoing market observation — there's no automated scraping or third-party live API involved." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is the data updated?",
+      "acceptedAnswer": { "@type": "Answer", "text": "There's no fixed schedule — figures are reviewed and updated manually as the market shifts. The data-updated date at the top of the page shows exactly how current the numbers are." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do prices I see elsewhere differ from what's shown here?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Region, condition, whether box and papers are complete, individual dealer markup, and timing all affect price — this tool shows a rough reference range, not a live quote from any specific channel." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this the official retail price or the secondhand market price?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It's a secondary/resale-market reference, meant to show whether a popular reference is trading at a premium or discount, not the brand's official retail price." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use this price to negotiate with a dealer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It can be used as a rough mental benchmark, but not as an actual quote — the real transaction price ultimately depends on the specific dealer or seller." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this tool save my search history or personal info?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. All searching and filtering happens entirely in your browser; only your language preference is saved locally." }
+    }
+  ]
+}
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -125,8 +164,24 @@
       <div class="ad-box" data-i18n="adLabel">广告</div>
     </div>
 
+    <section class="explain-section">
+      <h2 data-i18n="explainTitle">Where does this price data actually come from?</h2>
+      <p data-i18n="explainP1"></p>
+      <p data-i18n="explainP2"></p>
+      <p data-i18n="explainP3"></p>
+
+      <h2 data-i18n="faqTitle">Frequently Asked Questions</h2>
+      <div class="faq-list" id="faqList"></div>
+    </section>
+
     <footer class="disclaimer">
       <p data-i18n="disclaimer">数据为作者根据一线奢侈表零售从业经验整理，仅供参考，非实时报价，实际成交价格以市场为准。</p>
+      <nav class="footer-links">
+        <a href="https://junpingkoch-web.github.io/about.html">About · 关于</a>
+        <a href="https://junpingkoch-web.github.io/contact.html">Contact · 联系</a>
+        <a href="https://junpingkoch-web.github.io/privacy.html">Privacy · 隐私</a>
+        <a href="https://junpingkoch-web.github.io/terms.html">Terms · 条款</a>
+      </nav>
     </footer>
   </div>
 
