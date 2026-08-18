@@ -28,9 +28,18 @@
  * pulled from an exact quarterly transaction record. Treat this as a
  * reasonable public-data estimate, not verified trade data — please correct
  * with real observed transaction prices where you have them.
+ *
+ * Manual check-in (2026-08-18): added one interim "2026-08" point per watch
+ * by re-checking public aggregators (WatchCharts model pages, Chrono24 ref
+ * pages, Loupe market-value pages) — USD converted to CHF at ~0.811 (Aug 18
+ * 2026 spot). Cross-checked against the 2026-07 anchors: Patek, Cartier and
+ * AP lined up closely with the prior estimates; GMT-Master II Pepsi is
+ * essentially flat (post-discontinuation-rally prices have eased since the
+ * April 2026 Watches & Wonders announcement); Daytona Panda continues
+ * climbing. Still public-data estimates, not confirmed trade prices.
  */
 window.WATCH_PRICE_DATA = {
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-08-18",
   "sampleData": false,
   "currency": "CHF",
   "watches": [
@@ -56,7 +65,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2025-10", "price": 10900 },
         { "date": "2026-01", "price": 11000 },
         { "date": "2026-04", "price": 11100 },
-        { "date": "2026-07", "price": 11150 }
+        { "date": "2026-07", "price": 11150 },
+        { "date": "2026-08", "price": 11350 }
       ]
     },
     {
@@ -81,7 +91,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2025-10", "price": 26700 },
         { "date": "2026-01", "price": 26900 },
         { "date": "2026-04", "price": 27050 },
-        { "date": "2026-07", "price": 27300 }
+        { "date": "2026-07", "price": 27300 },
+        { "date": "2026-08", "price": 29360 }
       ]
     },
     {
@@ -106,7 +117,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2025-10", "price": 16450 },
         { "date": "2026-01", "price": 17500 },
         { "date": "2026-04", "price": 18900 },
-        { "date": "2026-07", "price": 18350 }
+        { "date": "2026-07", "price": 18350 },
+        { "date": "2026-08", "price": 18250 }
       ]
     },
     {
@@ -131,7 +143,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2025-10", "price": 4400 },
         { "date": "2026-01", "price": 4500 },
         { "date": "2026-04", "price": 4550 },
-        { "date": "2026-07", "price": 4600 }
+        { "date": "2026-07", "price": 4600 },
+        { "date": "2026-08", "price": 4620 }
       ]
     },
     {
@@ -156,7 +169,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2025-10", "price": 31300 },
         { "date": "2026-01", "price": 31700 },
         { "date": "2026-04", "price": 31950 },
-        { "date": "2026-07", "price": 32200 }
+        { "date": "2026-07", "price": 32200 },
+        { "date": "2026-08", "price": 32450 }
       ]
     },
     {
@@ -181,7 +195,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2025-10", "price": 75000 },
         { "date": "2026-01", "price": 79900 },
         { "date": "2026-04", "price": 85600 },
-        { "date": "2026-07", "price": 91300 }
+        { "date": "2026-07", "price": 91300 },
+        { "date": "2026-08", "price": 93300 }
       ]
     },
     {
@@ -206,7 +221,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2025-10", "price": 5200 },
         { "date": "2026-01", "price": 5350 },
         { "date": "2026-04", "price": 5450 },
-        { "date": "2026-07", "price": 5500 }
+        { "date": "2026-07", "price": 5500 },
+        { "date": "2026-08", "price": 5550 }
       ]
     }
   ]
