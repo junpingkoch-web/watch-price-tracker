@@ -56,6 +56,13 @@
  * rather than precise — especially Richard Mille RM 65-01, whose public
  * listings ranged from ~$341k (titanium) to ~$487k (rose gold) depending on
  * material; the titanium figure was used here.
+ *
+ * Entry-luxury expansion (2026-08-19, same day): added the other half of
+ * the scarcity spectrum discussed with the grail-tier batch above — Tudor,
+ * IWC, Breitling, Panerai, Jaeger-LeCoultre, Grand Seiko — accessible,
+ * regularly-in-stock brands with genuine demand, as opposed to the
+ * allocation-only grails. Same USD→CHF@~0.811 method; these six have
+ * normal, liquid secondary markets like the original 7 refs.
  */
 window.WATCH_PRICE_DATA = {
   "updatedAt": "2026-08-19",
@@ -580,6 +587,162 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-04", "price": 66500 },
         { "date": "2026-07", "price": 66800 },
         { "date": "2026-08", "price": 66900 }
+      ]
+    },
+    {
+      "id": "tudor-black-bay-58-79030n",
+      "brand": { "zh": "帝舵", "en": "Tudor", "de": "Tudor" },
+      "model": { "zh": "黑湾58", "en": "Black Bay 58", "de": "Black Bay 58" },
+      "ref": "79030N",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 2050 },
+        { "date": "2024-04", "price": 2100 },
+        { "date": "2024-07", "price": 2150 },
+        { "date": "2024-10", "price": 2180 },
+        { "date": "2025-01", "price": 2220 },
+        { "date": "2025-04", "price": 2250 },
+        { "date": "2025-07", "price": 2280 },
+        { "date": "2025-10", "price": 2300 },
+        { "date": "2026-01", "price": 2320 },
+        { "date": "2026-04", "price": 2340 },
+        { "date": "2026-07", "price": 2350 },
+        { "date": "2026-08", "price": 2360 }
+      ]
+    },
+    {
+      "id": "iwc-portugieser-chronograph-iw371617",
+      "brand": { "zh": "万国", "en": "IWC", "de": "IWC" },
+      "model": { "zh": "葡萄牙系列计时腕表", "en": "Portugieser Chronograph", "de": "Portugieser Chronograph" },
+      "ref": "IW371617",
+      "category": "dress",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 4700 },
+        { "date": "2024-04", "price": 4750 },
+        { "date": "2024-07", "price": 4800 },
+        { "date": "2024-10", "price": 4820 },
+        { "date": "2025-01", "price": 4850 },
+        { "date": "2025-04", "price": 4880 },
+        { "date": "2025-07", "price": 4900 },
+        { "date": "2025-10", "price": 4930 },
+        { "date": "2026-01", "price": 4950 },
+        { "date": "2026-04", "price": 4970 },
+        { "date": "2026-07", "price": 4985 },
+        { "date": "2026-08", "price": 4990 }
+      ]
+    },
+    {
+      "id": "breitling-navitimer-b01-43-ab0138",
+      "brand": { "zh": "百年灵", "en": "Breitling", "de": "Breitling" },
+      "model": { "zh": "航空计时B01 43", "en": "Navitimer B01 Chronograph 43", "de": "Navitimer B01 Chronograph 43" },
+      "ref": "AB0138",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 4750 },
+        { "date": "2024-04", "price": 4800 },
+        { "date": "2024-07", "price": 4830 },
+        { "date": "2024-10", "price": 4860 },
+        { "date": "2025-01", "price": 4880 },
+        { "date": "2025-04", "price": 4900 },
+        { "date": "2025-07", "price": 4930 },
+        { "date": "2025-10", "price": 4950 },
+        { "date": "2026-01", "price": 4970 },
+        { "date": "2026-04", "price": 4985 },
+        { "date": "2026-07", "price": 4995 },
+        { "date": "2026-08", "price": 5000 }
+      ]
+    },
+    {
+      "id": "panerai-luminor-marina-pam01312",
+      "brand": { "zh": "沛纳海", "en": "Panerai", "de": "Panerai" },
+      "model": { "zh": "Luminor Marina 44毫米", "en": "Luminor Marina 44mm", "de": "Luminor Marina 44mm" },
+      "ref": "PAM01312",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 4100 },
+        { "date": "2024-04", "price": 4020 },
+        { "date": "2024-07", "price": 3950 },
+        { "date": "2024-10", "price": 3900 },
+        { "date": "2025-01", "price": 3870 },
+        { "date": "2025-04", "price": 3850 },
+        { "date": "2025-07", "price": 3840 },
+        { "date": "2025-10", "price": 3850 },
+        { "date": "2026-01", "price": 3860 },
+        { "date": "2026-04", "price": 3870 },
+        { "date": "2026-07", "price": 3875 },
+        { "date": "2026-08", "price": 3880 }
+      ]
+    },
+    {
+      "id": "jlc-reverso-classic-medium-q2438520",
+      "brand": { "zh": "积家", "en": "Jaeger-LeCoultre", "de": "Jaeger-LeCoultre" },
+      "model": { "zh": "Reverso翻转系列中号", "en": "Reverso Classic Medium", "de": "Reverso Classic Medium" },
+      "ref": "Q2438520",
+      "category": "dress",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 4400 },
+        { "date": "2024-04", "price": 4450 },
+        { "date": "2024-07", "price": 4500 },
+        { "date": "2024-10", "price": 4530 },
+        { "date": "2025-01", "price": 4560 },
+        { "date": "2025-04", "price": 4590 },
+        { "date": "2025-07", "price": 4620 },
+        { "date": "2025-10", "price": 4650 },
+        { "date": "2026-01", "price": 4670 },
+        { "date": "2026-04", "price": 4685 },
+        { "date": "2026-07", "price": 4695 },
+        { "date": "2026-08", "price": 4700 }
+      ]
+    },
+    {
+      "id": "grand-seiko-snowflake-sbga211",
+      "brand": { "zh": "冠蓝狮", "en": "Grand Seiko", "de": "Grand Seiko" },
+      "model": { "zh": "雪花（Spring Drive）", "en": "Snowflake (Spring Drive)", "de": "Snowflake (Spring Drive)" },
+      "ref": "SBGA211",
+      "category": "dress",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 3500 },
+        { "date": "2024-04", "price": 3600 },
+        { "date": "2024-07", "price": 3700 },
+        { "date": "2024-10", "price": 3780 },
+        { "date": "2025-01", "price": 3850 },
+        { "date": "2025-04", "price": 3900 },
+        { "date": "2025-07", "price": 3950 },
+        { "date": "2025-10", "price": 3980 },
+        { "date": "2026-01", "price": 4000 },
+        { "date": "2026-04", "price": 4020 },
+        { "date": "2026-07", "price": 4040 },
+        { "date": "2026-08", "price": 4050 }
       ]
     }
   ]
