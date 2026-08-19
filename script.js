@@ -4,6 +4,21 @@
   const LANG_KEY = "watchPriceTracker.lang";
   const DATA = window.WATCH_PRICE_DATA || { updatedAt: "", sampleData: false, currency: "CHF", watches: [] };
 
+  // Group entries by brand (each brand's first-appearance order) so the grid
+  // stays organized by brand even as new refs get appended to data.js later,
+  // regardless of where in the array they were inserted.
+  (function groupByBrand() {
+    const order = [];
+    const seen = new Set();
+    DATA.watches.forEach((w) => {
+      if (!seen.has(w.brand.en)) {
+        seen.add(w.brand.en);
+        order.push(w.brand.en);
+      }
+    });
+    DATA.watches.sort((a, b) => order.indexOf(a.brand.en) - order.indexOf(b.brand.en));
+  })();
+
   const i18n = {
     zh: {
       appTitle: "腕表行情",
