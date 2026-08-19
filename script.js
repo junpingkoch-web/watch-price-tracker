@@ -124,7 +124,7 @@
       helpTip4: "Alle Daten sind manuell gepflegt, kein Live-Marktfeed — nur zur Orientierung.",
       allChip: "Alle",
       categorySport: "Sport",
-      categoryDress: "Dress",
+      categoryDress: "Elegant",
       periodChange: "Veränderung im Zeitraum",
       latestPrice: "Aktueller Preis",
       explainTitle: "Woher stammen diese Preisdaten eigentlich?",
