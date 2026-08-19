@@ -37,9 +37,18 @@
  * essentially flat (post-discontinuation-rally prices have eased since the
  * April 2026 Watches & Wonders announcement); Daytona Panda continues
  * climbing. Still public-data estimates, not confirmed trade prices.
+ *
+ * Coverage expansion (2026-08-19): added 9 more references (5 more Rolex,
+ * 1 each Omega/AP/Patek/Cartier) after user feedback that 3 Rolex refs
+ * under-represented real-world demand breadth. Full 2024-01→2026-08
+ * quarterly history estimated the same way as above (WatchCharts/Chrono24/
+ * Loupe current-value + reported 1yr/5yr trend %, USD→CHF at ~0.811),
+ * hand-smoothed between anchors. Aquanaut 5167A-001 and Royal Oak Offshore
+ * 26420ST had noticeably wider/noisier public listing ranges than the other
+ * refs — treat those two estimates as lower-confidence than the rest.
  */
 window.WATCH_PRICE_DATA = {
-  "updatedAt": "2026-08-18",
+  "updatedAt": "2026-08-19",
   "sampleData": false,
   "currency": "CHF",
   "watches": [
@@ -223,6 +232,240 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-04", "price": 5450 },
         { "date": "2026-07", "price": 5500 },
         { "date": "2026-08", "price": 5550 }
+      ]
+    },
+    {
+      "id": "rolex-datejust-41-126334",
+      "brand": { "zh": "劳力士", "en": "Rolex", "de": "Rolex" },
+      "model": { "zh": "日志型41", "en": "Datejust 41", "de": "Datejust 41" },
+      "ref": "126334",
+      "category": "dress",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 10200 },
+        { "date": "2024-04", "price": 10100 },
+        { "date": "2024-07", "price": 10050 },
+        { "date": "2024-10", "price": 10150 },
+        { "date": "2025-01", "price": 10400 },
+        { "date": "2025-04", "price": 10600 },
+        { "date": "2025-07", "price": 10900 },
+        { "date": "2025-10", "price": 11100 },
+        { "date": "2026-01", "price": 11400 },
+        { "date": "2026-04", "price": 11550 },
+        { "date": "2026-07", "price": 11700 },
+        { "date": "2026-08", "price": 11800 }
+      ]
+    },
+    {
+      "id": "rolex-explorer-ii-226570",
+      "brand": { "zh": "劳力士", "en": "Rolex", "de": "Rolex" },
+      "model": { "zh": "探险家II型", "en": "Explorer II", "de": "Explorer II" },
+      "ref": "226570",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 8900 },
+        { "date": "2024-04", "price": 8700 },
+        { "date": "2024-07", "price": 8500 },
+        { "date": "2024-10", "price": 8350 },
+        { "date": "2025-01", "price": 8250 },
+        { "date": "2025-04", "price": 8300 },
+        { "date": "2025-07", "price": 8400 },
+        { "date": "2025-10", "price": 8500 },
+        { "date": "2026-01", "price": 8650 },
+        { "date": "2026-04", "price": 8750 },
+        { "date": "2026-07", "price": 8850 },
+        { "date": "2026-08", "price": 8900 }
+      ]
+    },
+    {
+      "id": "rolex-sea-dweller-126600",
+      "brand": { "zh": "劳力士", "en": "Rolex", "de": "Rolex" },
+      "model": { "zh": "海使型", "en": "Sea-Dweller", "de": "Sea-Dweller" },
+      "ref": "126600",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 10600 },
+        { "date": "2024-04", "price": 10300 },
+        { "date": "2024-07", "price": 10000 },
+        { "date": "2024-10", "price": 9800 },
+        { "date": "2025-01", "price": 9650 },
+        { "date": "2025-04", "price": 9550 },
+        { "date": "2025-07", "price": 9550 },
+        { "date": "2025-10", "price": 9600 },
+        { "date": "2026-01", "price": 9650 },
+        { "date": "2026-04", "price": 9680 },
+        { "date": "2026-07", "price": 9700 },
+        { "date": "2026-08", "price": 9700 }
+      ]
+    },
+    {
+      "id": "rolex-yacht-master-126622",
+      "brand": { "zh": "劳力士", "en": "Rolex", "de": "Rolex" },
+      "model": { "zh": "游艇名仕型40", "en": "Yacht-Master 40", "de": "Yacht-Master 40" },
+      "ref": "126622",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 10300 },
+        { "date": "2024-04", "price": 10350 },
+        { "date": "2024-07", "price": 10400 },
+        { "date": "2024-10", "price": 10500 },
+        { "date": "2025-01", "price": 10600 },
+        { "date": "2025-04", "price": 10700 },
+        { "date": "2025-07", "price": 10800 },
+        { "date": "2025-10", "price": 10900 },
+        { "date": "2026-01", "price": 11000 },
+        { "date": "2026-04", "price": 11080 },
+        { "date": "2026-07", "price": 11150 },
+        { "date": "2026-08", "price": 11200 }
+      ]
+    },
+    {
+      "id": "rolex-sky-dweller-336934",
+      "brand": { "zh": "劳力士", "en": "Rolex", "de": "Rolex" },
+      "model": { "zh": "天行者型", "en": "Sky-Dweller", "de": "Sky-Dweller" },
+      "ref": "336934",
+      "category": "dress",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 15800 },
+        { "date": "2024-04", "price": 16100 },
+        { "date": "2024-07", "price": 16500 },
+        { "date": "2024-10", "price": 16900 },
+        { "date": "2025-01", "price": 17300 },
+        { "date": "2025-04", "price": 17700 },
+        { "date": "2025-07", "price": 18100 },
+        { "date": "2025-10", "price": 18500 },
+        { "date": "2026-01", "price": 18800 },
+        { "date": "2026-04", "price": 18950 },
+        { "date": "2026-07", "price": 19050 },
+        { "date": "2026-08", "price": 19100 }
+      ]
+    },
+    {
+      "id": "omega-seamaster-diver-300m-21030422001",
+      "brand": { "zh": "欧米茄", "en": "Omega", "de": "Omega" },
+      "model": { "zh": "海马300米潜水表", "en": "Seamaster Diver 300M", "de": "Seamaster Diver 300M" },
+      "ref": "210.30.42.20.01.001",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 4300 },
+        { "date": "2024-04", "price": 4250 },
+        { "date": "2024-07", "price": 4200 },
+        { "date": "2024-10", "price": 4250 },
+        { "date": "2025-01", "price": 4350 },
+        { "date": "2025-04", "price": 4400 },
+        { "date": "2025-07", "price": 4420 },
+        { "date": "2025-10", "price": 4450 },
+        { "date": "2026-01", "price": 4480 },
+        { "date": "2026-04", "price": 4520 },
+        { "date": "2026-07", "price": 4550 },
+        { "date": "2026-08", "price": 4570 }
+      ]
+    },
+    {
+      "id": "ap-royal-oak-offshore-26420st",
+      "brand": { "zh": "爱彼", "en": "Audemars Piguet", "de": "Audemars Piguet" },
+      "model": { "zh": "皇家橡树离岸型计时码表", "en": "Royal Oak Offshore Chronograph", "de": "Royal Oak Offshore Chronograph" },
+      "ref": "26420ST",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录；此型号在各渠道的挂牌价差异较大，置信度低于其他条目",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records; listing prices for this ref vary widely across channels, lower confidence than other entries",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten; die Angebotspreise für diese Referenz streuen stark, geringere Konfidenz als bei den übrigen Einträgen"
+      },
+      "history": [
+        { "date": "2024-01", "price": 37500 },
+        { "date": "2024-04", "price": 36200 },
+        { "date": "2024-07", "price": 34800 },
+        { "date": "2024-10", "price": 33800 },
+        { "date": "2025-01", "price": 33200 },
+        { "date": "2025-04", "price": 33800 },
+        { "date": "2025-07", "price": 34500 },
+        { "date": "2025-10", "price": 35200 },
+        { "date": "2026-01", "price": 35800 },
+        { "date": "2026-04", "price": 36100 },
+        { "date": "2026-07", "price": 36350 },
+        { "date": "2026-08", "price": 36500 }
+      ]
+    },
+    {
+      "id": "patek-philippe-aquanaut-5167a-001",
+      "brand": { "zh": "百达翡丽", "en": "Patek Philippe", "de": "Patek Philippe" },
+      "model": { "zh": "Aquanaut（复合表带款）", "en": "Aquanaut (composite strap)", "de": "Aquanaut (Kautschukband)" },
+      "ref": "5167A-001",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录；该型号挂牌价区间较宽，置信度低于其他条目",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records; listing prices for this ref span an unusually wide range, lower confidence than other entries",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten; die Angebotspreise für diese Referenz streuen ungewöhnlich stark, geringere Konfidenz als bei den übrigen Einträgen"
+      },
+      "history": [
+        { "date": "2024-01", "price": 42000 },
+        { "date": "2024-04", "price": 39500 },
+        { "date": "2024-07", "price": 37000 },
+        { "date": "2024-10", "price": 35500 },
+        { "date": "2025-01", "price": 34500 },
+        { "date": "2025-04", "price": 34000 },
+        { "date": "2025-07", "price": 34800 },
+        { "date": "2025-10", "price": 36200 },
+        { "date": "2026-01", "price": 37500 },
+        { "date": "2026-04", "price": 38200 },
+        { "date": "2026-07", "price": 38700 },
+        { "date": "2026-08", "price": 39000 }
+      ]
+    },
+    {
+      "id": "cartier-tank-must-xl-wsta0053",
+      "brand": { "zh": "卡地亚", "en": "Cartier", "de": "Cartier" },
+      "model": { "zh": "坦克Must大号", "en": "Tank Must, Extra-Large", "de": "Tank Must, Extra-Large" },
+      "ref": "WSTA0053",
+      "category": "dress",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten"
+      },
+      "history": [
+        { "date": "2024-01", "price": 3250 },
+        { "date": "2024-04", "price": 3280 },
+        { "date": "2024-07", "price": 3300 },
+        { "date": "2024-10", "price": 3330 },
+        { "date": "2025-01", "price": 3360 },
+        { "date": "2025-04", "price": 3390 },
+        { "date": "2025-07", "price": 3420 },
+        { "date": "2025-10", "price": 3450 },
+        { "date": "2026-01", "price": 3470 },
+        { "date": "2026-04", "price": 3490 },
+        { "date": "2026-07", "price": 3500 },
+        { "date": "2026-08", "price": 3510 }
       ]
     }
   ]
