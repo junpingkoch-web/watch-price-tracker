@@ -150,7 +150,7 @@
 
   const LOCALE_MAP = { zh: "zh-CN", en: "en-US", de: "de-DE" };
 
-  let currentLang = localStorage.getItem(LANG_KEY) || "zh";
+  let currentLang = localStorage.getItem(LANG_KEY) || "de";
   let searchQuery = "";
   let selectedBrand = null;
   let selectedCategory = null;
