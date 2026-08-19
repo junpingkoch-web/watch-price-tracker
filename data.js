@@ -46,6 +46,16 @@
  * hand-smoothed between anchors. Aquanaut 5167A-001 and Royal Oak Offshore
  * 26420ST had noticeably wider/noisier public listing ranges than the other
  * refs — treat those two estimates as lower-confidence than the rest.
+ *
+ * Grail-tier expansion (2026-08-19, same day): added 4 new brands at the
+ * user's explicit request for genuinely scarce/allocation-only watches —
+ * Vacheron Constantin, A. Lange & Söhne, Richard Mille, F.P. Journe — as
+ * opposed to merely-popular entry brands. Same USD→CHF@~0.811 estimation
+ * method. These four have thinner/lower-liquidity secondary markets than
+ * everything else in this file, so treat the price estimates as directional
+ * rather than precise — especially Richard Mille RM 65-01, whose public
+ * listings ranged from ~$341k (titanium) to ~$487k (rose gold) depending on
+ * material; the titanium figure was used here.
  */
 window.WATCH_PRICE_DATA = {
   "updatedAt": "2026-08-19",
@@ -466,6 +476,110 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-04", "price": 3490 },
         { "date": "2026-07", "price": 3500 },
         { "date": "2026-08", "price": 3510 }
+      ]
+    },
+    {
+      "id": "vacheron-constantin-overseas-4500v-110ab128",
+      "brand": { "zh": "江诗丹顿", "en": "Vacheron Constantin", "de": "Vacheron Constantin" },
+      "model": { "zh": "纵横四海（不锈钢，蓝盘）", "en": "Overseas (steel, blue dial)", "de": "Overseas (Stahl, blaues Zifferblatt)" },
+      "ref": "4500V/110A-B128",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录；此价位段流动性低于主流品牌，估算区间可能更宽",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records; secondary-market liquidity at this tier is thinner than mainstream brands, so treat as directional",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten; die Liquidität in diesem Segment ist geringer als bei den gängigen Marken, daher eher als Richtwert zu verstehen"
+      },
+      "history": [
+        { "date": "2024-01", "price": 20800 },
+        { "date": "2024-04", "price": 21000 },
+        { "date": "2024-07", "price": 21200 },
+        { "date": "2024-10", "price": 21500 },
+        { "date": "2025-01", "price": 21800 },
+        { "date": "2025-04", "price": 22000 },
+        { "date": "2025-07", "price": 22200 },
+        { "date": "2025-10", "price": 22350 },
+        { "date": "2026-01", "price": 22420 },
+        { "date": "2026-04", "price": 22460 },
+        { "date": "2026-07", "price": 22480 },
+        { "date": "2026-08", "price": 22500 }
+      ]
+    },
+    {
+      "id": "alange-sohne-lange-1-191032",
+      "brand": { "zh": "朗格", "en": "A. Lange & Söhne", "de": "A. Lange & Söhne" },
+      "model": { "zh": "朗格1号（玫瑰金）", "en": "Lange 1 (pink gold)", "de": "Lange 1 (Roségold)" },
+      "ref": "191.032",
+      "category": "dress",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录；此价位段流动性低于主流品牌，估算区间可能更宽",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records; secondary-market liquidity at this tier is thinner than mainstream brands, so treat as directional",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten; die Liquidität in diesem Segment ist geringer als bei den gängigen Marken, daher eher als Richtwert zu verstehen"
+      },
+      "history": [
+        { "date": "2024-01", "price": 19800 },
+        { "date": "2024-04", "price": 20200 },
+        { "date": "2024-07", "price": 20600 },
+        { "date": "2024-10", "price": 21100 },
+        { "date": "2025-01", "price": 21600 },
+        { "date": "2025-04", "price": 22000 },
+        { "date": "2025-07", "price": 22400 },
+        { "date": "2025-10", "price": 23200 },
+        { "date": "2026-01", "price": 23900 },
+        { "date": "2026-04", "price": 24400 },
+        { "date": "2026-07", "price": 24800 },
+        { "date": "2026-08", "price": 25100 }
+      ]
+    },
+    {
+      "id": "richard-mille-rm-65-01",
+      "brand": { "zh": "里查德米尔", "en": "Richard Mille", "de": "Richard Mille" },
+      "model": { "zh": "自动上链双追针计时（钛金属）", "en": "RM 65-01 Split-Seconds Chronograph (titanium)", "de": "RM 65-01 Schleppzeiger-Chronograph (Titan)" },
+      "ref": "RM 65-01",
+      "category": "sport",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录；同款不同材质（钛金属/碳纤维/玫瑰金）成交价差异极大，此处以钛金属版本为准，置信度低于其他条目",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records; prices vary hugely by case material (titanium/carbon TPT/rose gold) — the titanium version is used here, lower confidence than other entries",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten; die Preise variieren je nach Gehäusematerial (Titan/Carbon TPT/Roségold) stark — hier wird die Titanversion verwendet, geringere Konfidenz als bei den übrigen Einträgen"
+      },
+      "history": [
+        { "date": "2024-01", "price": 255000 },
+        { "date": "2024-04", "price": 258000 },
+        { "date": "2024-07", "price": 262000 },
+        { "date": "2024-10", "price": 266000 },
+        { "date": "2025-01", "price": 269000 },
+        { "date": "2025-04", "price": 271000 },
+        { "date": "2025-07", "price": 273000 },
+        { "date": "2025-10", "price": 274500 },
+        { "date": "2026-01", "price": 275500 },
+        { "date": "2026-04", "price": 276000 },
+        { "date": "2026-07", "price": 276300 },
+        { "date": "2026-08", "price": 276500 }
+      ]
+    },
+    {
+      "id": "fp-journe-chronometre-bleu-tantale",
+      "brand": { "zh": "F.P.Journe", "en": "F.P. Journe", "de": "F.P. Journe" },
+      "model": { "zh": "蓝色天文台表（钽金属）", "en": "Chronomètre Bleu (tantalum)", "de": "Chronomètre Bleu (Tantal)" },
+      "ref": "CB Tantale",
+      "category": "dress",
+      "note": {
+        "zh": "基于公开二手行情平台数据估算，非精确成交记录；独立制表品牌年产量极低（全品牌约800枚/年），此价位段流动性低于主流品牌，估算区间可能更宽",
+        "en": "Estimated from public secondhand-market aggregator data, not exact transaction records; this independent brand's total annual output is tiny (~800 pieces/year across all models), so secondary-market liquidity is thinner than mainstream brands — treat as directional",
+        "de": "Geschätzt anhand öffentlicher Gebrauchtmarkt-Daten, keine exakten Transaktionsdaten; die jährliche Gesamtproduktion dieser unabhängigen Manufaktur ist sehr gering (ca. 800 Stück/Jahr über alle Modelle), daher geringere Liquidität als bei den gängigen Marken — eher als Richtwert zu verstehen"
+      },
+      "history": [
+        { "date": "2024-01", "price": 78000 },
+        { "date": "2024-04", "price": 75000 },
+        { "date": "2024-07", "price": 72000 },
+        { "date": "2024-10", "price": 70000 },
+        { "date": "2025-01", "price": 68500 },
+        { "date": "2025-04", "price": 67500 },
+        { "date": "2025-07", "price": 67000 },
+        { "date": "2025-10", "price": 66500 },
+        { "date": "2026-01", "price": 66300 },
+        { "date": "2026-04", "price": 66500 },
+        { "date": "2026-07", "price": 66800 },
+        { "date": "2026-08", "price": 66900 }
       ]
     }
   ]
