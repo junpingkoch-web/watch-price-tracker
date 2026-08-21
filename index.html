@@ -191,19 +191,44 @@
     </div>
 
     <section class="explain-section">
-      <h2 data-i18n="explainTitle">Where does this price data actually come from?</h2>
-      <p data-i18n="explainP1"></p>
-      <p data-i18n="explainP2"></p>
-      <p data-i18n="explainP3"></p>
+      <h2 data-i18n="explainTitle">这些价格数据是怎么来的？</h2>
+      <p data-i18n="explainP1">本工具里的每一条价格记录，都是我基于自己在瑞士高端腕表零售一线的工作经验，结合日常观察到的二级市场行情，手工整理和更新的——不接入任何拍卖行、二手表交易平台或经销商的实时API，也不做自动抓取。</p>
+      <p data-i18n="explainP2">页面上方「数据更新于」标注的是最近一次人工核对和更新价格的时间，不代表实时行情——腕表二级市场价格本身波动就比股票、加密货币更慢，按周或按月观察趋势通常更有参考意义，而不是追踪逐秒波动。</p>
+      <p data-i18n="explainP3">同一型号在不同渠道看到的价格出现差异很正常：受地区、成色、原盒原证是否齐全、经销商加价策略，以及查询的具体时间点影响，实际成交价可能高于或低于本工具展示的参考区间。把这里的数字当作「大致方向」和「谈判起点」，而不是精确报价。</p>
 
-      <h2 data-i18n="caseTitle">Case study: the price rollercoaster of the Patek Philippe Nautilus 5711/1A-010</h2>
-      <p data-i18n="caseP1"></p>
-      <p data-i18n="caseP2"></p>
-      <p data-i18n="caseP3"></p>
-      <p data-i18n="caseP4"></p>
+      <h2 data-i18n="caseTitle">案例观察：百达翡丽鹦鹉螺 5711/1A-010 的价格过山车</h2>
+      <p data-i18n="caseP1">这只蓝盘鹦鹉螺是个很好的例子，能说明二手表价格为什么会剧烈波动，而不只是缓慢涨跌。2021年百达翡丽官方停产5711系列后，市场一度陷入抢购狂潮，行情在停产消息刚出的那一两年被炒到远超发行价的水平。表格里能看到的最早数据点（2024年1月，CHF 106,000）其实已经是从更早的历史高点回落之后的价格。</p>
+      <p data-i18n="caseP2">随后的十五个月里，价格几乎腰斩：到2025年4月跌到CHF 69,300，累计跌幅超过35%。这背后是整个高端二手表市场在2023–2024年经历的普遍降温——疫情期间被炒热的「停产即涨价」逻辑退潮，加上大量早期获得配货的买家开始集中出手套现，供给一下子变多，价格自然承压。</p>
+      <p data-i18n="caseP3">但从2025年年中开始，价格又开始稳步回升，到2026年7月已经回到CHF 91,300，一年多时间涨回了约32%。这种「暴涨—腰斩—企稳回升」的过山车走势，在停产的高需求表款上并不罕见——短期投机情绪退去后，真正由稀缺性支撑的表款通常还是能找到新的价格平衡点，只是这个过程可能要一两年，而不是几周。</p>
+      <p data-i18n="caseP4">这也是为什么本工具坚持展示完整的历史走势图，而不只是一个当前价格数字——只看某个月的价格，很容易误判一只表到底是「稳定」，还是刚好处在周期的高点或低点。</p>
 
-      <h2 data-i18n="faqTitle">Frequently Asked Questions</h2>
-      <div class="faq-list" id="faqList"></div>
+      <h2 data-i18n="faqTitle">常见问题</h2>
+      <div class="faq-list" id="faqList">
+        <details class="faq-item">
+          <summary><span class="chev">▶</span> <span>这些价格数据是从实时市场API或拍卖行抓取的吗？</span></summary>
+          <div class="faq-a">不是。所有数据都是我根据自己在瑞士高端腕表零售的一线工作经验和日常市场观察手工整理的，不接入任何自动抓取或第三方实时API。</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="chev">▶</span> <span>数据多久更新一次？</span></summary>
+          <div class="faq-a">没有固定周期，我会不定期根据市场变化人工核对和更新。每个页面顶部的「数据更新于」标注的就是最近一次更新时间。</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="chev">▶</span> <span>为什么我在别的平台看到的价格和这里不一样？</span></summary>
+          <div class="faq-a">很正常。价格会受地区、成色、原盒原证是否齐全、具体经销商的加价策略以及查询时间点影响，本工具展示的是一个粗略的参考区间，不是某个具体渠道当下的实时报价。</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="chev">▶</span> <span>这里显示的是官方零售价还是二手市场价？</span></summary>
+          <div class="faq-a">是二级/二手市场的参考价格趋势，用于观察热门型号的溢价或折价走势，不代表品牌官方零售价。</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="chev">▶</span> <span>我可以拿这个价格去跟经销商砍价吗？</span></summary>
+          <div class="faq-a">可以作为谈判前的心理参考，帮你判断大致的市场区间，但不建议直接当作报价单——具体成交价最终取决于你联系的那家经销商或卖家。</div>
+        </details>
+        <details class="faq-item">
+          <summary><span class="chev">▶</span> <span>这个工具会保存我的搜索记录或个人信息吗？</span></summary>
+          <div class="faq-a">不会。所有搜索和筛选都在你的浏览器本地完成，只有语言偏好会保存在本地，不会发送到任何服务器，也不需要注册。</div>
+        </details>
+      </div>
     </section>
 
     <footer class="disclaimer">
