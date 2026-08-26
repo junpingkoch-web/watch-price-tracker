@@ -406,6 +406,7 @@
     viewList.classList.remove("active");
     viewDetail.classList.add("active");
     window.scrollTo({ top: 0, behavior: "smooth" });
+    if (typeof gtag === "function") gtag("event", "tool_result_generated", { tool_name: "watch-price-tracker" });
   }
 
   backBtn.addEventListener("click", () => {
