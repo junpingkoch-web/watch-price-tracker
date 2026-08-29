@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="腕表行情 Watch Price Trends Uhren-Preistrends">
 <meta name="twitter:description" content="查询劳力士、欧米茄、爱彼、百达翡丽等热门二手表款的价格走势 — 中文/English/Deutsch。">
-<link rel="stylesheet" href="style.css?v=20260819">
+<link rel="stylesheet" href="style.css?v=20260830b">
 <!-- Structured data: FAQPage (English defaults; keep in sync with the "en" faq array in script.js) -->
 <script type="application/ld+json">
 {
@@ -115,9 +115,9 @@
       <div class="header-actions">
         <button id="helpToggle" class="icon-btn help-btn-3d" type="button" aria-label="Tips" aria-haspopup="dialog">?</button>
         <div class="lang-switch" role="group" aria-label="Language">
-          <button class="lang-btn" data-lang="zh" type="button">中文</button>
-          <button class="lang-btn" data-lang="en" type="button">EN</button>
-          <button class="lang-btn active" data-lang="de" type="button">DE</button>
+          <button class="lang-btn" data-lang="zh" type="button" aria-pressed="false">中文</button>
+          <button class="lang-btn" data-lang="en" type="button" aria-pressed="false">EN</button>
+          <button class="lang-btn active" data-lang="de" type="button" aria-pressed="true">DE</button>
         </div>
       </div>
     </header>
@@ -144,6 +144,7 @@
 
       <p class="updated-note"><span data-i18n="updatedLabel">数据更新于</span> <span id="updatedDate"></span></p>
 
+      <p id="resultsStatus" class="sr-only" aria-live="polite" aria-atomic="true"></p>
       <div id="watchGrid" class="watch-grid"></div>
       <p class="empty-state" id="listEmptyState" data-i18n="noResults" hidden>没有找到匹配的表款。</p>
     </section>
@@ -272,6 +273,6 @@
   </div>
 
   <script src="data.js?v=20260819d"></script>
-  <script src="script.js?v=20260819c"></script>
+  <script src="script.js?v=20260830"></script>
 </body>
 </html>

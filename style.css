@@ -23,7 +23,7 @@
     --text-muted: #746b57;
     --accent: #a97f22;
     --accent-hover: #8c6a1c;
-    --up: #2f8f52;
+    --up: #2b834b;
     --down: #c8493d;
     --warn-bg: #fdf1d6;
     --warn-border: #e6c579;
@@ -32,6 +32,18 @@
 }
 
 * { box-sizing: border-box; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* Some in-app browsers (e.g. embedded webviews) impose a ~300ms tap delay or
    double-tap-to-zoom on generic tap targets unless touch-action is explicit. */
@@ -99,8 +111,8 @@ body {
   background: var(--bg-elevated);
   color: var(--text);
   border-radius: 999px;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
@@ -138,6 +150,9 @@ body {
   background: transparent;
   color: var(--text-muted);
   padding: 7px 12px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   border-radius: 999px;
   font-size: 0.8rem;
   font-weight: 700;
@@ -187,6 +202,7 @@ body {
   color: var(--text);
   border-radius: 10px;
   padding: 10px 12px;
+  min-height: 44px;
   font-size: 0.95rem;
 }
 
@@ -200,6 +216,9 @@ body {
   color: var(--text-muted);
   border-radius: 999px;
   padding: 6px 14px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
@@ -389,6 +408,7 @@ body {
   border: none;
   border-radius: 10px;
   padding: 10px 16px;
+  min-height: 44px;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
@@ -467,6 +487,7 @@ body {
 .faq-item summary {
   cursor: pointer;
   padding: 12px 14px;
+  min-height: 44px;
   font-size: 0.86rem;
   font-weight: 600;
   display: flex;
@@ -482,7 +503,14 @@ body {
 
 /* Footer trust-page links */
 .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 14px; font-size: 0.76rem; }
-.footer-links a { color: var(--text-muted); text-decoration: none; }
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 15px 4px;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
 .footer-links a:hover { color: var(--text); text-decoration: underline; }
 
 .support-fab {

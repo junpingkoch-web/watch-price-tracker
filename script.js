@@ -26,6 +26,7 @@
       searchPlaceholder: "例如 Submariner、劳力士、126610…",
       updatedLabel: "数据更新于",
       noResults: "没有找到匹配的表款。",
+      resultsCount: "展示 {n} 项结果",
       backBtn: "返回列表",
       dateCol: "日期",
       priceCol: "价格",
@@ -68,6 +69,7 @@
       searchPlaceholder: "e.g. Submariner, Rolex, 126610…",
       updatedLabel: "Data updated",
       noResults: "No matching watches found.",
+      resultsCount: "Showing {n} results",
       backBtn: "Back to list",
       dateCol: "Date",
       priceCol: "Price",
@@ -110,6 +112,7 @@
       searchPlaceholder: "z. B. Submariner, Rolex, 126610…",
       updatedLabel: "Daten aktualisiert am",
       noResults: "Keine passenden Uhren gefunden.",
+      resultsCount: "{n} Ergebnisse angezeigt",
       backBtn: "Zurück zur Liste",
       dateCol: "Datum",
       priceCol: "Preis",
@@ -188,6 +191,7 @@
   const categoryChipsEl = document.getElementById("categoryChips");
   const watchGrid = document.getElementById("watchGrid");
   const listEmptyState = document.getElementById("listEmptyState");
+  const resultsStatus = document.getElementById("resultsStatus");
   const updatedDateEl = document.getElementById("updatedDate");
   const sampleBanner = document.getElementById("sampleBanner");
   const viewList = document.getElementById("viewList");
@@ -227,7 +231,9 @@
       el.setAttribute("title", t(el.getAttribute("data-i18n-title")));
     });
     document.querySelectorAll(".lang-btn").forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.lang === currentLang);
+      const isActive = btn.dataset.lang === currentLang;
+      btn.classList.toggle("active", isActive);
+      btn.setAttribute("aria-pressed", isActive ? "true" : "false");
     });
     buildChips();
     renderGrid();
@@ -246,11 +252,42 @@
   const helpModal = document.getElementById("helpModal");
   const helpToggle = document.getElementById("helpToggle");
   const helpClose = document.getElementById("helpClose");
-  helpToggle.addEventListener("click", () => { helpModal.hidden = false; });
-  helpClose.addEventListener("click", () => { helpModal.hidden = true; });
-  helpModal.addEventListener("click", (e) => { if (e.target === helpModal) helpModal.hidden = true; });
+  const helpModalBox = helpModal.querySelector(".modal");
+
+  function getFocusable(container) {
+    return Array.from(container.querySelectorAll(
+      'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    ));
+  }
+
+  function openHelpModal() {
+    helpModal.hidden = false;
+    helpClose.focus();
+  }
+
+  function closeHelpModal() {
+    helpModal.hidden = true;
+    helpToggle.focus();
+  }
+
+  helpToggle.addEventListener("click", openHelpModal);
+  helpClose.addEventListener("click", closeHelpModal);
+  helpModal.addEventListener("click", (e) => { if (e.target === helpModal) closeHelpModal(); });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !helpModal.hidden) helpModal.hidden = true;
+    if (helpModal.hidden) return;
+    if (e.key === "Escape") { closeHelpModal(); return; }
+    if (e.key !== "Tab") return;
+    const focusable = getFocusable(helpModalBox);
+    if (focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
   });
 
   // ---------- Chips ----------
@@ -308,6 +345,7 @@
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "chip" + (active ? " active" : "");
+    btn.setAttribute("aria-pressed", active ? "true" : "false");
     btn.textContent = label;
     btn.addEventListener("click", onClick);
     return btn;
@@ -368,6 +406,11 @@
     const list = filteredWatches();
     watchGrid.innerHTML = "";
     listEmptyState.hidden = list.length !== 0;
+    if (resultsStatus) {
+      resultsStatus.textContent = list.length === 0
+        ? t("noResults")
+        : t("resultsCount").replace("{n}", list.length);
+    }
 
     list.forEach((w) => {
       const { last, pct } = periodDelta(w.history);
