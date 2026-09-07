@@ -63,9 +63,26 @@
  * regularly-in-stock brands with genuine demand, as opposed to the
  * allocation-only grails. Same USD→CHF@~0.811 method; these six have
  * normal, liquid secondary markets like the original 7 refs.
+ *
+ * Monthly review (2026-09-07): added one "2026-09" point per watch via
+ * WebSearch (WatchCharts model/variant "market value" figures preferred,
+ * Chrono24 listing averages as fallback when no clean WatchCharts figure
+ * surfaced) — USD converted to CHF at ~0.810 (Sept 5 2026 spot,
+ * effectively unchanged from the 0.811 used since July). Two refs came in
+ * close to but under the 20%-move threshold on thinner source data and are
+ * called out as lower-confidence: Omega Seamaster Diver 300M
+ * 210.30.42.20.01.001 (-18.5%, search results conflated it with a
+ * neighboring reference 210.32.42.20.01.001) and AP Royal Oak Offshore
+ * 26420ST (-18.2%, no listing found for the exact dial/bezel combo, used
+ * the closest comparable 26420 steel variants instead). One ref crossed
+ * the 20% threshold and is flagged for manual review: Cartier Tank Must XL
+ * WSTA0053, down ~24% — new pre-owned range ($2,900-3,700) sits below the
+ * prior anchor and close to/under retail, which is a more normal
+ * depreciation pattern for this non-scarce piece than the prior estimate,
+ * but worth a human sanity check rather than trusting silently.
  */
 window.WATCH_PRICE_DATA = {
-  "updatedAt": "2026-08-19",
+  "updatedAt": "2026-09-07",
   "sampleData": false,
   "currency": "CHF",
   "watches": [
@@ -92,7 +109,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 11000 },
         { "date": "2026-04", "price": 11100 },
         { "date": "2026-07", "price": 11150 },
-        { "date": "2026-08", "price": 11350 }
+        { "date": "2026-08", "price": 11350 },
+        { "date": "2026-09", "price": 11990 }
       ]
     },
     {
@@ -118,7 +136,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 26900 },
         { "date": "2026-04", "price": 27050 },
         { "date": "2026-07", "price": 27300 },
-        { "date": "2026-08", "price": 29360 }
+        { "date": "2026-08", "price": 29360 },
+        { "date": "2026-09", "price": 31590 }
       ]
     },
     {
@@ -144,7 +163,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 17500 },
         { "date": "2026-04", "price": 18900 },
         { "date": "2026-07", "price": 18350 },
-        { "date": "2026-08", "price": 18250 }
+        { "date": "2026-08", "price": 18250 },
+        { "date": "2026-09", "price": 17820 }
       ]
     },
     {
@@ -170,7 +190,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 4500 },
         { "date": "2026-04", "price": 4550 },
         { "date": "2026-07", "price": 4600 },
-        { "date": "2026-08", "price": 4620 }
+        { "date": "2026-08", "price": 4620 },
+        { "date": "2026-09", "price": 4553 }
       ]
     },
     {
@@ -196,7 +217,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 31700 },
         { "date": "2026-04", "price": 31950 },
         { "date": "2026-07", "price": 32200 },
-        { "date": "2026-08", "price": 32450 }
+        { "date": "2026-08", "price": 32450 },
+        { "date": "2026-09", "price": 33128 }
       ]
     },
     {
@@ -222,7 +244,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 79900 },
         { "date": "2026-04", "price": 85600 },
         { "date": "2026-07", "price": 91300 },
-        { "date": "2026-08", "price": 93300 }
+        { "date": "2026-08", "price": 93300 },
+        { "date": "2026-09", "price": 96695 }
       ]
     },
     {
@@ -248,7 +271,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 5350 },
         { "date": "2026-04", "price": 5450 },
         { "date": "2026-07", "price": 5500 },
-        { "date": "2026-08", "price": 5550 }
+        { "date": "2026-08", "price": 5550 },
+        { "date": "2026-09", "price": 5484 }
       ]
     },
     {
@@ -274,7 +298,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 11400 },
         { "date": "2026-04", "price": 11550 },
         { "date": "2026-07", "price": 11700 },
-        { "date": "2026-08", "price": 11800 }
+        { "date": "2026-08", "price": 11800 },
+        { "date": "2026-09", "price": 11574 }
       ]
     },
     {
@@ -300,7 +325,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 8650 },
         { "date": "2026-04", "price": 8750 },
         { "date": "2026-07", "price": 8850 },
-        { "date": "2026-08", "price": 8900 }
+        { "date": "2026-08", "price": 8900 },
+        { "date": "2026-09", "price": 8971 }
       ]
     },
     {
@@ -326,7 +352,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 9650 },
         { "date": "2026-04", "price": 9680 },
         { "date": "2026-07", "price": 9700 },
-        { "date": "2026-08", "price": 9700 }
+        { "date": "2026-08", "price": 9700 },
+        { "date": "2026-09", "price": 9617 }
       ]
     },
     {
@@ -352,7 +379,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 11000 },
         { "date": "2026-04", "price": 11080 },
         { "date": "2026-07", "price": 11150 },
-        { "date": "2026-08", "price": 11200 }
+        { "date": "2026-08", "price": 11200 },
+        { "date": "2026-09", "price": 11258 }
       ]
     },
     {
@@ -378,7 +406,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 18800 },
         { "date": "2026-04", "price": 18950 },
         { "date": "2026-07", "price": 19050 },
-        { "date": "2026-08", "price": 19100 }
+        { "date": "2026-08", "price": 19100 },
+        { "date": "2026-09", "price": 19122 }
       ]
     },
     {
@@ -404,7 +433,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 4480 },
         { "date": "2026-04", "price": 4520 },
         { "date": "2026-07", "price": 4550 },
-        { "date": "2026-08", "price": 4570 }
+        { "date": "2026-08", "price": 4570 },
+        { "date": "2026-09", "price": 3726 }
       ]
     },
     {
@@ -430,7 +460,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 35800 },
         { "date": "2026-04", "price": 36100 },
         { "date": "2026-07", "price": 36350 },
-        { "date": "2026-08", "price": 36500 }
+        { "date": "2026-08", "price": 36500 },
+        { "date": "2026-09", "price": 29870 }
       ]
     },
     {
@@ -456,7 +487,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 37500 },
         { "date": "2026-04", "price": 38200 },
         { "date": "2026-07", "price": 38700 },
-        { "date": "2026-08", "price": 39000 }
+        { "date": "2026-08", "price": 39000 },
+        { "date": "2026-09", "price": 42930 }
       ]
     },
     {
@@ -482,7 +514,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 3470 },
         { "date": "2026-04", "price": 3490 },
         { "date": "2026-07", "price": 3500 },
-        { "date": "2026-08", "price": 3510 }
+        { "date": "2026-08", "price": 3510 },
+        { "date": "2026-09", "price": 2673 }
       ]
     },
     {
@@ -508,7 +541,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 22420 },
         { "date": "2026-04", "price": 22460 },
         { "date": "2026-07", "price": 22480 },
-        { "date": "2026-08", "price": 22500 }
+        { "date": "2026-08", "price": 22500 },
+        { "date": "2026-09", "price": 22674 }
       ]
     },
     {
@@ -534,7 +568,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 23900 },
         { "date": "2026-04", "price": 24400 },
         { "date": "2026-07", "price": 24800 },
-        { "date": "2026-08", "price": 25100 }
+        { "date": "2026-08", "price": 25100 },
+        { "date": "2026-09", "price": 26528 }
       ]
     },
     {
@@ -560,7 +595,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 275500 },
         { "date": "2026-04", "price": 276000 },
         { "date": "2026-07", "price": 276300 },
-        { "date": "2026-08", "price": 276500 }
+        { "date": "2026-08", "price": 276500 },
+        { "date": "2026-09", "price": 278178 }
       ]
     },
     {
@@ -586,7 +622,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 66300 },
         { "date": "2026-04", "price": 66500 },
         { "date": "2026-07", "price": 66800 },
-        { "date": "2026-08", "price": 66900 }
+        { "date": "2026-08", "price": 66900 },
+        { "date": "2026-09", "price": 66825 }
       ]
     },
     {
@@ -612,7 +649,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 2320 },
         { "date": "2026-04", "price": 2340 },
         { "date": "2026-07", "price": 2350 },
-        { "date": "2026-08", "price": 2360 }
+        { "date": "2026-08", "price": 2360 },
+        { "date": "2026-09", "price": 2377 }
       ]
     },
     {
@@ -638,7 +676,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 4950 },
         { "date": "2026-04", "price": 4970 },
         { "date": "2026-07", "price": 4985 },
-        { "date": "2026-08", "price": 4990 }
+        { "date": "2026-08", "price": 4990 },
+        { "date": "2026-09", "price": 4982 }
       ]
     },
     {
@@ -664,7 +703,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 4970 },
         { "date": "2026-04", "price": 4985 },
         { "date": "2026-07", "price": 4995 },
-        { "date": "2026-08", "price": 5000 }
+        { "date": "2026-08", "price": 5000 },
+        { "date": "2026-09", "price": 5468 }
       ]
     },
     {
@@ -690,7 +730,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 3860 },
         { "date": "2026-04", "price": 3870 },
         { "date": "2026-07", "price": 3875 },
-        { "date": "2026-08", "price": 3880 }
+        { "date": "2026-08", "price": 3880 },
+        { "date": "2026-09", "price": 4410 }
       ]
     },
     {
@@ -716,7 +757,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 4670 },
         { "date": "2026-04", "price": 4685 },
         { "date": "2026-07", "price": 4695 },
-        { "date": "2026-08", "price": 4700 }
+        { "date": "2026-08", "price": 4700 },
+        { "date": "2026-09", "price": 5049 }
       ]
     },
     {
@@ -742,7 +784,8 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-01", "price": 4000 },
         { "date": "2026-04", "price": 4020 },
         { "date": "2026-07", "price": 4040 },
-        { "date": "2026-08", "price": 4050 }
+        { "date": "2026-08", "price": 4050 },
+        { "date": "2026-09", "price": 3726 }
       ]
     }
   ]
