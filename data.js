@@ -94,9 +94,26 @@
  * review. Richard Mille RM 65-01: no clean single WatchCharts figure
  * (results spanned $214k-$534k across variants), held flat vs Sept.
  * FP Journe CB uses the midpoint of the quoted $65k-87k range.
+ *
+ * Monthly review (2026-10-12, full re-run): USD/CHF ~0.829 (Oct 9-12 quotes,
+ * down from 0.836). Two points updated in place (same month, not appended):
+ * Rolex Submariner Date 126610LN to 13,100 CHF (~$15.8k, Bob's Watches sold
+ * median Oct 2025-Sep 2026; stored value was below sold data), and Lange 1
+ * 191.032 to 29,330 CHF (~$35.4k, WatchCharts Oct page). The other refs
+ * checked against Oct WatchCharts/sold data are within ~2% and left alone
+ * (Daytona, GMT Pepsi, RO 15500ST, Sky-Dweller, BB58, Reverso, Overseas).
+ *
+ * NOT changed, flagged for a human decision (gaps over 20%):
+ * - Aquanaut 5167A: WatchCharts Oct ~$71.7k (Aug ~$71.0k, auctions $61-73k)
+ *   vs stored 49,370 CHF (~$59k). A fix would be ~59,400 CHF, +20%.
+ * - RM 65-01 titanium: held flat at 278,178 CHF (~$335k), but pre-owned
+ *   2023-24 asking prices are ~$250-260k (~211k CHF).
+ * - FP Journe Chronometre Bleu CB: stored 63,640 CHF (~$77k), but 2026 auction
+ *   results were $169-179k (Sotheby's Jul, Antiquorum May) and complete dealer
+ *   asks $185-230k.
  */
 window.WATCH_PRICE_DATA = {
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-12",
   "sampleData": false,
   "currency": "CHF",
   "watches": [
@@ -125,7 +142,7 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-07", "price": 11150 },
         { "date": "2026-08", "price": 11350 },
         { "date": "2026-09", "price": 11990 },
-        { "date": "2026-10", "price": 11505 }
+        { "date": "2026-10", "price": 13100 }
       ]
     },
     {
@@ -601,7 +618,7 @@ window.WATCH_PRICE_DATA = {
         { "date": "2026-07", "price": 24800 },
         { "date": "2026-08", "price": 25100 },
         { "date": "2026-09", "price": 26528 },
-        { "date": "2026-10", "price": 27410 }
+        { "date": "2026-10", "price": 29330 }
       ]
     },
     {
